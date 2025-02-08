@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Fundraiser</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h2>Kindovo</h2>
+        <nav>
+            <a href="#fundraisers">Fundraisers</a>
+            <a href="#">Donate</a>
+        </nav>
+        <button class="login-btn"><a href="login.html">Login</a></button>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Make a Difference Today</h1>
+            <p>Join our mission to help those in need. Donate, fundraise, and create change.</p>
+            <a href="/donate" class="cta-btn">Donate Now</a>
+        </div>
+    </section>
+    
+    <section class="about-us">
+        <h2>About Us</h2>
+        <p>Welcome to our charity fundraising platform! We are a global non-profit organization committed to making the world a better place by connecting those in need with generous donors. Our mission is to empower individuals, communities, and causes by providing a transparent and accessible platform for charitable fundraising.</p>
+        <p>Our vision is to create a world where every cause, no matter how big or small, has the support it needs to thrive. We believe in the power of collective action, and together, we can make a real difference in the lives of those who need it the most.</p>
+        <p>We provide a space for individuals and organizations to start fundraising campaigns for causes such as health, education, disaster relief, animal welfare, and more. With every donation, you’re helping create positive change and bringing hope to communities around the globe.</p>
+        <p>Join us in our mission to make the world a kinder and more compassionate place. Together, we can do so much more!</p>
+    </section>    
+    <main>
+        <section class="create-fundraiser">
+            <h2>Create Your Fundraiser</h2>
+            <form id="fundraiser-form">
+                <label for="title">Fundraiser Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="goal">Goal Amount ($):</label>
+                <input type="number" id="goal" name="goal" required min="1">
+
+                <label for="description">Fundraiser Description:</label>
+                <textarea id="description" name="description" required></textarea>
+
+                <button type="submit">Create Fundraiser</button>
+            </form>
+        </section>
+
+        <section class="campaign-list">
+            <h2 id="Fundraisers">Current Fundraisers</h2>    
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>We are a non-profit organization committed to helping people and communities through charitable fundraising. Our mission is to make the world a better place by connecting those in need with people who care.</p>
+            </div>
+    
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: support@charityfundraiser.org</p>
+                <p>Phone: +1 (123) 456-7890</p>
+            </div>
+    
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/terms">Terms & Conditions</a></li>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/donate">Donate Now</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 Charity Fundraising Platform. All rights reserved.</p>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

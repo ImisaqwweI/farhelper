@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registration.css">
+    <title>Регистрация</title>
+</head>
+<body>
+    <div class="register-part">
+        <h1>Выберите тип регистрации</h1>
+        <div class="registration-choice">
+            <button class="btn" id="person-register-btn">Регистрация как человек</button>
+            <button class="btn" id="fund-register-btn">Регистрация как фонд</button>
+        </div>
+        <!-- Регистрация как человек -->
+        <form id="person-form" class="hidden">
+            <h2>Регистрация как человек</h2>
+            <div class="input-box">
+                <input type="text" placeholder="Имя" required>
+            </div>
+            <div class="input-box">
+                <input type="email" placeholder="Электронная почта" required>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Пароль" required>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Подтвердите пароль" required>
+            </div>
+            <button type="submit" class="btn">Зарегистрироваться</button>
+            <div class="returnback">
+                <p><a href="index.html">Вернуться назад</a></p>
+            </div>
+        </form>
+        <!-- Регистрация как фонд -->
+        <form id="fund-form" class="hidden">
+            <h2>Регистрация как фонд</h2>
+            <div class="input-box">
+                <input type="text" placeholder="Название фонда" required>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="ИНН фонда" required>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Юридический адрес" required>
+            </div>
+            <div class="input-box">
+                <input type="email" placeholder="Электронная почта" required>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Контактный номер телефона" required>
+            </div>
+            <div class="input-box">
+                <textarea placeholder="Описание фонда (цели и миссия)" rows="4" required></textarea>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Пароль" required>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Подтвердите пароль" required>
+            </div>
+            <button type="submit" class="btn">Зарегистрироваться</button>
+            <div class="returnback">
+                <p><a href="index.html">Вернуться назад</a></p>
+            </div>
+        </form>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>
